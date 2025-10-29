@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +13,11 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
-
         body {
             background: linear-gradient(135deg, #1a5928, #3bb54a);
             min-height: 100vh;
             overflow-x: hidden;
         }
-
         .glass-card {
             background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
@@ -26,13 +26,11 @@
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
-
         .glass-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
-
         .btn-primary {
             background: linear-gradient(135deg, #2e8b57, #3cb371);
             color: white;
@@ -45,12 +43,10 @@
             position: relative;
             overflow: hidden;
         }
-
         .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
         }
-
         .btn-primary::after {
             content: '';
             position: absolute;
@@ -61,11 +57,9 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transform: translateX(-100%);
         }
-
         .btn-primary:hover::after {
             animation: shine 1.5s infinite;
         }
-
         .btn-login {
             background: linear-gradient(135deg, #ff9d00, #ff6a00);
             color: white;
@@ -78,12 +72,10 @@
             position: relative;
             overflow: hidden;
         }
-
         .btn-login:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
         }
-
         .btn-login::after {
             content: '';
             position: absolute;
@@ -94,37 +86,30 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transform: translateX(-100%);
         }
-
         .btn-login:hover::after {
             animation: shine 1.5s infinite;
         }
-
         @keyframes shine {
             100% {
                 transform: translateX(100%);
             }
         }
-
         .floating {
             animation: float 3s ease-in-out infinite;
         }
-
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-15px); }
             100% { transform: translateY(0px); }
         }
-
         .pulse {
             animation: pulse 2s infinite;
         }
-
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
-
         .bg-circles {
             position: absolute;
             top: 0;
@@ -134,21 +119,18 @@
             overflow: hidden;
             z-index: -1;
         }
-
         .bg-circle {
             position: absolute;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.05);
             animation: move-up 15s linear infinite;
         }
-
         @keyframes move-up {
             0% { transform: translateY(100vh) scale(0); opacity: 0; }
             10% { opacity: 1; }
             90% { opacity: 0.8; }
             100% { transform: translateY(-100vh) scale(1); opacity: 0; }
         }
-
         .progress-bar {
             height: 10px;
             background: rgba(255, 255, 255, 0.2);
@@ -156,7 +138,6 @@
             overflow: hidden;
             position: relative;
         }
-
         .progress-fill {
             height: 100%;
             border-radius: 5px;
@@ -164,7 +145,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .progress-fill::after {
             content: '';
             position: absolute;
@@ -175,17 +155,14 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
             animation: progress-shine 2s infinite;
         }
-
         @keyframes progress-shine {
             0% { transform: translateX(-100%); }
             100% { transform: translateX(100%); }
         }
-
         .quote-card {
             position: relative;
             overflow: hidden;
         }
-
         .quote-card::before {
             content: '"';
             position: absolute;
@@ -195,23 +172,19 @@
             color: rgba(255, 255, 255, 0.1);
             font-family: serif;
         }
-
         .logo-spin {
             animation: spin 20s linear infinite;
         }
-
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-
         .logo-container {
             position: relative;
             overflow: hidden;
             border-radius: 50%;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
         }
-
         .logo-container::after {
             content: '';
             position: absolute;
@@ -223,7 +196,6 @@
             transform: rotate(45deg);
             animation: shine-logo 3s infinite;
         }
-
         @keyframes shine-logo {
             0% { transform: translateX(-100%) rotate(45deg); }
             100% { transform: translateX(100%) rotate(45deg); }
@@ -240,7 +212,6 @@
         <div class="bg-circle" style="width: 120px; height: 120px; left: 20%; animation-duration: 23s; animation-delay: 10s;"></div>
         <div class="bg-circle" style="width: 180px; height: 180px; left: 50%; animation-duration: 19s; animation-delay: 15s;"></div>
     </div>
-
     <!-- Header -->
     <header class="relative py-6 px-4 md:px-10">
         <div class="container mx-auto flex justify-between items-center">
@@ -288,7 +259,6 @@
             </div>
         </div>
     </header>
-
     <!-- Hero Section -->
     <section class="py-10 md:py-16 px-4">
         <div class="container mx-auto flex flex-col md:flex-row items-center">
@@ -348,7 +318,6 @@
             </div>
         </div>
     </section>
-
     <!-- About Section -->
     <section id="tentang" class="py-16 px-4">
         <div class="container mx-auto">
@@ -373,7 +342,6 @@
             </div>
         </div>
     </section>
-
     <!-- Indicators Section -->
     <section id="indikator" class="py-16 px-4 bg-green-900 bg-opacity-30">
         <div class="container mx-auto">
@@ -422,7 +390,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="glass-card p-6 pulse" style="animation-delay: 0.3s;">
                     <div class="w-16 h-16 rounded-full bg-green-600 flex items-center justify-center mb-6 mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -457,7 +424,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="glass-card p-6 pulse" style="animation-delay: 0.6s;">
                     <div class="w-16 h-16 rounded-full bg-green-600 flex items-center justify-center mb-6 mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -495,7 +461,6 @@
             </div>
         </div>
     </section>
-
     <!-- How to Fill Section -->
     <section id="cara" class="py-16 px-4">
         <div class="container mx-auto">
@@ -533,7 +498,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="glass-card p-6 text-center">
                         <div class="w-16 h-16 rounded-full bg-green-600 flex items-center justify-center mb-6 mx-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -562,7 +526,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="glass-card p-6 text-center">
                         <div class="w-16 h-16 rounded-full bg-green-600 flex items-center justify-center mb-6 mx-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -595,7 +558,6 @@
             </div>
         </div>
     </section>
-
     <!-- Quote Section -->
     <section class="py-16 px-4 bg-green-900 bg-opacity-30">
         <div class="container mx-auto">
@@ -616,7 +578,6 @@
             </div>
         </div>
     </section>
-
     <!-- Fill Report Section -->
     <section id="pengisian" class="py-16 px-4">
         <div class="container mx-auto">
@@ -640,7 +601,6 @@
                         Isi Rapor BPH
                     </a>
                 </div>
-
                 <div class="glass-card p-6 text-center hover:transform hover:scale-105 transition duration-300">
                     <div class="w-16 h-16 rounded-full bg-green-600 flex items-center justify-center mb-6 mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -653,7 +613,6 @@
                         Isi Rapor Departemen
                     </a>
                 </div>
-
                 <div class="glass-card p-6 text-center hover:transform hover:scale-105 transition duration-300">
                     <div class="w-16 h-16 rounded-full bg-green-600 flex items-center justify-center mb-6 mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -669,7 +628,6 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="py-10 px-4 bg-green-900 bg-opacity-50">
         <div class="container mx-auto">
@@ -692,30 +650,24 @@
             </div>
         </div>
     </footer>
-
     <script>
         // Mobile menu toggle
         const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
+        const mobileMenu = document.getElementById('mobile-menu');     
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
+                const targetElement = document.querySelector(targetId);             
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
-                    });
-                    
+                    });               
                     // Hide mobile menu after clicking
                     if (!mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
@@ -723,12 +675,10 @@
                 }
             });
         });
-
         // Create animated background circles
         function createBackgroundCircles() {
             const bgCircles = document.querySelector('.bg-circles');
-            const numberOfCircles = 10;
-            
+            const numberOfCircles = 10;            
             for (let i = 0; i < numberOfCircles; i++) {
                 const size = Math.random() * 150 + 50;
                 const circle = document.createElement('div');
@@ -740,17 +690,14 @@
                 circle.style.animationDelay = `${Math.random() * 10}s`;
                 bgCircles.appendChild(circle);
             }
-        }
-        
+        }        
         createBackgroundCircles();
-
         // Add logo animation effect
         const logoElements = document.querySelectorAll('img[alt="Logo BEM Fahutan"]');
         logoElements.forEach(logo => {
             logo.addEventListener('mouseover', () => {
                 logo.classList.add('logo-spin');
-            });
-            
+            });         
             logo.addEventListener('mouseout', () => {
                 logo.classList.remove('logo-spin');
             });
